@@ -81,6 +81,8 @@ $(document).ready(function() {
         event.preventDefault();
         var userinput = parseInt($("input#depositamount").val());
         var newBalance = deposit(userinput);
+        $(".balance").show();
+        $(".balance").text("$ " + newBalance);
         $(".newtransactions").show();
         $(".depositamount").hide();
         $(".submit").hide();
