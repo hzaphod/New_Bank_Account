@@ -1,0 +1,49 @@
+//output:index.html
+
+doctype
+html
+	title 5adiyah
+	link(rel="stylesheet", href="css/normalize.css")
+	link(rel="stylesheet", href="css/skeleton.css")
+	link(rel="stylesheet", href="css/styles.css")
+	link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel="stylesheet" type="text/css")
+	script(src="jquery-1.12.0.js")
+	script(src="scripts.js")
+	body
+
+	.maincontent
+		.whitebox
+			.topbar
+				p . . .
+			.accountbalance.center
+				img(src="piggypig.png")
+				h3.center Account Balance for: #[span#customername ]
+				p.center.balance #[span#customername ]
+			.container
+				form#new-customer.center
+					.row.name
+						label.two.columns(for="new-first-name") First Name 
+						input.ten.columns(type="text", class="form-control", id="new-first-name")
+					.row.name
+						label.two.columns(for="new-last-name") Last Name
+						input.ten.columns(type="text", class="form-control", id="new-last-name")
+					.userinput
+						.row.depositamount
+							label.two.columns(for="depositamount") Amount of $
+							input.ten.columns(type="number", class="form-control", id="depositamount")
+						.row.withdrawamount
+							label.two.columns(for="withdrawamount") Amount of $
+							input.ten.columns(type="number", class="form-control", id="withdrawamount")
+					
+					.row.newtransactions
+						button.button.six.columns(type="submit", id="currentaccount") New Transaction on My Account
+						button.button.six.columns(type="submit", id="newaccount") New Transaction on New Account
+					.row.transactions
+						button.button.six.columns(type="submit", id="deposit") Deposit
+						button.button.six.columns(type="submit", id="withdraw") Withdraw
+					.row.submit
+						.empty.four.columns #[&nbsp]
+						button.button.four.columns(type="submit", id="#submit") Submit
+						.empty.four.columns #[&nbsp]
+				hr
+					

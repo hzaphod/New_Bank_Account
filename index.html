@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <title>5adiyah</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+  <script src="jquery-1.12.0.js"></script>
+  <script src="scripts.js"></script>
+  <body></body>
+  <div class="maincontent">
+    <div class="whitebox">
+      <div class="topbar">
+        <p>. . .</p>
+      </div>
+      <div class="accountbalance center"><img src="piggypig.png">
+        <h3 class="center">Account Balance for: <span id="customername"> </span></h3>
+        <p class="center balance"><span id="customername"> </span></p>
+      </div>
+      <div class="container">
+        <form id="new-customer" class="center">
+          <div class="row name">
+            <label for="new-first-name" class="two columns">First Name </label>
+            <input type="text" id="new-first-name" class="ten columns form-control">
+          </div>
+          <div class="row name">
+            <label for="new-last-name" class="two columns">Last Name</label>
+            <input type="text" id="new-last-name" class="ten columns form-control">
+          </div>
+          <div class="userinput">
+            <div class="row depositamount">
+              <label for="depositamount" class="two columns">Amount of $</label>
+              <input type="number" id="depositamount" class="ten columns form-control">
+            </div>
+            <div class="row withdrawamount">
+              <label for="withdrawamount" class="two columns">Amount of $</label>
+              <input type="number" id="withdrawamount" class="ten columns form-control">
+            </div>
+          </div>
+          <div class="row newtransactions">
+            <button type="submit" id="currentaccount" class="button six columns">New Transaction on My Account</button>
+            <button type="submit" id="newaccount" class="button six columns">New Transaction on New Account</button>
+          </div>
+          <div class="row transactions">
+            <button type="submit" id="deposit" class="button six columns">Deposit</button>
+            <button type="submit" id="withdraw" class="button six columns">Withdraw</button>
+          </div>
+          <div class="row submit">
+            <div class="empty four columns">&nbsp</div>
+            <button type="submit" id="#submit" class="button four columns">Submit</button>
+            <div class="empty four columns">&nbsp</div>
+          </div>
+        </form>
+        <hr>
+      </div>
+    </div>
+  </div>
+</html>

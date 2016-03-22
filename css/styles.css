@@ -1,0 +1,231 @@
+
+.header {
+  margin-top: 3%;
+  padding-top: 3%;
+}
+
+.center {
+  text-align: center;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.darkpurple {
+  color: #140023
+}
+
+.tan {
+  color: #EE9285;
+}
+
+.title {
+  font-family: serif;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin-bottom: 40%;
+}
+
+h3 {
+  font-family: serif;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.link {
+  font-family: sans-serif;
+  letter-spacing: 4px;
+}
+
+.socialmedia{
+  margin-top: 45%;
+}
+
+.smedia{
+  padding-bottom: 5%;
+}
+
+.whitebox {
+  background-color: #fafafa;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 2% 2% 0.5% 0.5%;
+}
+
+.text{
+  padding: 3% 1% 1% 10%;
+
+}
+
+.boxes{
+  padding: 2%;
+}
+
+body {
+  background-color: #7BB0A6;
+  color: #140023;
+}
+
+.button:hover{
+  background-color: #EE9285;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.button {
+  margin-left: 3%;
+  width: 140px;
+  display: inline-block;
+}
+
+.greyed {
+  background: #EEE;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  height: 200px;
+  line-height: 200px;
+  margin-bottom: .75rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  margin-bottom: 3%;
+}
+
+.greyed:hover{
+  background-color: #EE9285;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+
+.post {
+  background: #EEE;
+  border-radius: 4px;
+  letter-spacing: .1rem;
+  margin-bottom: 3%;
+  padding: 2%;
+}
+
+hr {
+  color: #7BB0A6;
+  border: 1px solid #7BB0A6;
+}
+
+.twelve.column img {
+  float: left;
+  padding: 3%;
+}
+
+.u-full-width{
+  height: 500px;
+}
+
+a {
+  text-decoration: none;
+  color: #EE9285;
+}
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #5A4D4D;
+}
+
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+  background-color: #140023;
+  border-color: #140023;
+}
+
+
+.blogcontent {
+  width: 95%;
+  margin: auto;
+}
+
+.blogimg {
+  float: left;
+  margin: 1.5%;
+  border-radius: 10px;
+}
+
+.blogtext {
+  margin-top: 2%;
+}
+
+.blogtext table{
+  margin: auto;
+}
+.blogtext h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #140023;
+}
+
+
+
+.maincontent{
+  padding-top: 2%;
+}
+
+.topbar{
+  background-color: #5A4D4D;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px 5px 0px 0px;
+  /*margin-bottom: 2%;*/
+  padding-bottom: 0.5%;
+}
+
+.accountbalance {
+  background-color: #FFF0DC;
+  padding-bottom: 2%;
+  margin-bottom: 3%;
+
+}
+
+.topbar p{
+  color: #C1B6B6;
+  font-family: serif;
+  font-size: 100px;
+  letter-spacing: -12px;
+  line-height: 0;
+}
+
+.depositamount, .withdrawamount, .submit, .newtransactions, .balance {
+  display: none;
+}
+
+.hide{
+  display: none;
+}
+
+.height{
+  height: 100%;
+}
+
+#new-contact{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#show-contact{
+  display: none;
+}
+
+.contact{
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.contact:hover{
+  text-decoration: underline;
+}
