@@ -198,7 +198,7 @@ label {
   line-height: 0;
 }
 
-.withdrawamount, .transactions, .newtransactions, .balance {
+.transactions, .newtransactions, .balance {
   display: none;
 }
 

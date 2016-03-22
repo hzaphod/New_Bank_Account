@@ -18,7 +18,7 @@ html
 			.accountbalance.center
 				img(src="piggypig.png")
 				h3.center Account Balance for: #[span#customername ]
-				p.center.balance #[span#customername ]
+				p.center.balance #[span#balanceamount ]
 			.container
 				form#new-customer.center
 					.row.name
@@ -27,21 +27,15 @@ html
 					.row.name
 						label.two.columns(for="new-last-name") Last Name
 						input.ten.columns(type="text", class="form-control", id="new-last-name")
-					.userinput
-						.row.depositamount
-							label.two.columns(for="depositamount") Amount of $
-							input.ten.columns(type="number", class="form-control", id="depositamount")
-						.row.withdrawamount
-							label.two.columns(for="withdrawamount") Amount of $
-							input.ten.columns(type="number", class="form-control", id="withdrawamount")
-					
-					.row.newtransactions
-						button.button.six.columns(type="submit", id="currentaccount") New Transaction on My Account
-						button.button.six.columns(type="submit", id="newaccount") New Transaction on New Account
-						
+					.row.moneyamout
+						label.two.columns(for="moneyamount") Amount of $
+						input.ten.columns(type="number", class="form-control", id="moneyamount")
+				
+		
 					.row.transactions
-						button.button.six.columns(type="submit", id="deposit") Deposit
-						button.button.six.columns(type="submit", id="withdraw") Withdraw
+						button.button.four.columns(type="submit", id="deposit") Deposit
+						button.button.four.columns(type="submit", id="withdraw") Withdraw
+						button.button.four.columns(type="submit", id="newaccount") New Account
 						
 					.row.submit
 						.empty.four.columns #[&nbsp]
