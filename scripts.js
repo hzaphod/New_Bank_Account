@@ -3,7 +3,7 @@
 function Customer(first, last, balance) {
   this.firstName = first;
   this.lastName = last;
-  this.balance = balance;
+  this.balance = 0;
 }
 
 Customer.prototype.fullName = function() {
@@ -30,14 +30,15 @@ $(document).ready(function() {
     $("#customername").text(newCustomer.fullName());
 
     var userinput = parseInt($("input#moneyamount").val());
-    var newBalance = new Customer(inputtedFirstName, inputtedLastName, userinput);
+
 
     $(".name").hide();
     $(".submit").hide();
     $(".transactions").show();
 
     $("#deposit").click(function(){
-      var newBalance = new Customer(userinput);
+      var newBalance = new Customer(inputtedFirstName, inputtedLastName, userinput); //This works for initial deposits //maybe call it new account instead
+      var newBalance = new Customer(userinput); // for future deposits just call the function
       $(".balance").show();
       $(".balanceamount").text("$ " + newBalance);
     });
