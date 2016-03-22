@@ -12,11 +12,11 @@ Customer.prototype.fullName = function() {
 
 Customer.prototype.deposit = function(userinput){
   return this.balance = this.balance + userinput;
-}
+};
 
 Customer.prototype.withdraw = function(userinput){
   return this.balance = this.balance - userinput;
-}
+};
 
 
 $(document).ready(function() {
@@ -26,9 +26,11 @@ $(document).ready(function() {
 
     var inputtedFirstName = $("input#new-first-name").val();
     var inputtedLastName = $("input#new-last-name").val();
-    var userinput = parseInt($("input#moneyamount").val());
     var newCustomer = new Customer(inputtedFirstName, inputtedLastName);
     $("#customername").text(newCustomer.fullName());
+
+    var userinput = parseInt($("input#moneyamount").val());
+    var newBalance = new Customer(inputtedFirstName, inputtedLastName, userinput);
 
     $(".name").hide();
     $(".submit").hide();
@@ -36,9 +38,8 @@ $(document).ready(function() {
 
     $("#deposit").click(function(){
       var newBalance = new Customer(userinput);
-      debugger;
       $(".balance").show();
-      $(".balance").text("$ " + newBalance);
+      $(".balanceamount").text("$ " + newBalance);
     });
 
     $("#newaccount").click(function(){
