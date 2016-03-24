@@ -3,7 +3,7 @@
 function Customer(first, last, balance) {
   this.firstName = first;
   this.lastName = last;
-  this.balance = 0;
+  this.balance = balance;
 }
 
 Customer.prototype.fullName = function() {
@@ -11,11 +11,11 @@ Customer.prototype.fullName = function() {
 };
 
 Customer.prototype.deposit = function(userinput){
-  return this.balance = this.balance + userinput;
+  this.balance = this.balance + userinput;
 };
 
 Customer.prototype.withdraw = function(userinput){
-  return this.balance = this.balance - userinput;
+  this.balance = this.balance - userinput;
 };
 
 
@@ -26,11 +26,15 @@ $(document).ready(function() {
 
     var inputtedFirstName = $("input#new-first-name").val();
     var inputtedLastName = $("input#new-last-name").val();
-    var newCustomer = new Customer(inputtedFirstName, inputtedLastName);
-    $("#customername").text(newCustomer.fullName());
+
+
+
 
     var userinput = parseInt($("input#moneyamount").val());
     $("#balanceamount").text(userinput);
+
+    var newCustomer = new Customer(inputtedFirstName, inputtedLastName, userinput);
+    $("#customername").text(newCustomer.fullName());
 
     $(".name").hide();
     $(".submit").hide();
@@ -38,13 +42,15 @@ $(document).ready(function() {
     $(".balance").show();
 
 
-
     $("#deposit").click(function(){
+      var userinput = parseInt($("input#moneyamount").val());
+      newCustomer.deposit(userinput);
+      $("#balanceamount").text(newCustomer.balance);
       debugger;
-      var newBalance = new Customer(inputtedFirstName, inputtedLastName, userinput); //This works for initial deposits //maybe call it new account instead
-      var newBalance = new Customer(userinput); // for future deposits just call the function
-      $(".balance").show();
-      $(".balanceamount").text("$ " + newBalance);
+      // var newBalance = new Customer(balance); //This works for initial deposits //maybe call it new account instead
+      // var newBalance = new Customer(userinput); // for future deposits just call the function
+      // $(".balance").show();
+      // $(".balanceamount").text("$ " + newBalance);
     });
 
     $("#newaccount").click(function(){
