@@ -50,7 +50,6 @@ $(document).ready(function() {
       var userinput = parseInt($("input#moneyamount").val());
       newCustomer.withdraw(userinput);
       $("#balanceamount").text(newCustomer.balance);
-      debugger;
     });
 
 
