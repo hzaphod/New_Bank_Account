@@ -30,13 +30,17 @@ $(document).ready(function() {
     $("#customername").text(newCustomer.fullName());
 
     var userinput = parseInt($("input#moneyamount").val());
-
+    $("#balanceamount").text(userinput);
 
     $(".name").hide();
     $(".submit").hide();
     $(".transactions").show();
+    $(".balance").show();
+
+
 
     $("#deposit").click(function(){
+      debugger;
       var newBalance = new Customer(inputtedFirstName, inputtedLastName, userinput); //This works for initial deposits //maybe call it new account instead
       var newBalance = new Customer(userinput); // for future deposits just call the function
       $(".balance").show();
